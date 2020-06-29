@@ -1,0 +1,599 @@
+<resources>
+    <!-- material keylines -->
+    <dimen name="first_keyline">16dp</dimen>
+    <dimen name="phone_tablet_margin">16dp</dimen>
+    <dimen name="second_keyline">72dp</dimen>
+    <!--  Icon itself has 12dp padding, so 16dp — 12dp = 4dp padding on mobile and 24dp — 12dp = 12dp on tablet devices. -->
+    <dimen name="toolbar_horizontal_padding">4dp</dimen>
+
+    <!--  Icon itself has 12dp padding, so 16dp — 12dp = 4dp padding on mobile and 48dp — 12dp = 36dp on tablet devices. -->
+    <dimen name="icon_padding_left">4dp</dimen>
+
+    <dimen name="space_margin">10dp</dimen>
+    <dimen name="floating_button_margin">16dp</dimen>
+
+    <dimen name="top_list_padding">16dp</dimen>
+    <dimen name="drawer_width">425dp</dimen>
+
+    <!--main content-->
+    <dimen name="top_username_margin">0dp</dimen>
+    <dimen name="content_margin">16dp</dimen>
+    <dimen name="small_content_margin">8dp</dimen>
+    <dimen name="small_padding_account">6dp</dimen>
+    <dimen name="content_margin_top">16dp</dimen>
+    <dimen name="content_boarder_radius">2dp</dimen>
+    <dimen name="content_boarder_radius_for_swipe">2dp</dimen>
+    <dimen name="content_shadow_blur">4px</dimen>
+    <dimen name="content_min_height">120dp</dimen>
+    <dimen name="lazy_loading_weight">150dp</dimen>
+    <dimen name="content_main_loading_margin">120dp</dimen>
+    <dimen name="content_main_error_margin">120dp</dimen>
+    <dimen name="content_main_margin_top">-50dp</dimen>
+    <dimen name="content_main_margin_bottom">50dp</dimen>
+    <dimen name="content_main_margin_payments_top">35dp</dimen>
+    <dimen name="content_main_elevation">2dp</dimen>
+    <dimen name="content_main_verify_dialog_height">150dp</dimen>
+    <dimen name="content_main_dialog_width">320dp</dimen>
+    <item name="account_chooser_main_dialog_height" format="integer" type="dimen">-1</item>
+    <dimen name="content_main_dialog_loading_min_height">300dp</dimen>
+    <dimen name="content_main_scrollview_margin_top">35dp</dimen>
+    <dimen name="alert_enable_verify_margin_top">0dp</dimen>
+
+    <item name="content_main_match_wrap_content" format="integer" type="dimen">-1</item>
+    <dimen name="small_padding">5dp</dimen>
+    <dimen name="remember_me_top_margin">20dp</dimen>
+
+    <!-- navigation menu -->
+    <dimen name="navigation_menu_icon_width">56dp</dimen>
+
+    <!-- Toolbar size -->
+    <dimen name="toolbar_elevation">4dp</dimen>
+    <dimen name="toolbar_normal_height">140dp</dimen>
+    <dimen name="toolbar_locator_height">160dp</dimen>
+    <dimen name="toolbar_small_height">100dp</dimen>
+    <dimen name="toolbar_large_height">316dp</dimen>
+    <dimen name="toolbar_extra_large_height">405dp</dimen>
+    <dimen name="toolbar_extra_large_width">0dp</dimen>
+    <dimen name="menu_navigation_header_height">120dp</dimen>
+    <dimen name="toolbar_height">70dp</dimen>
+    <dimen name="toolbar_ic_margin_left_right">16dp</dimen>
+    <dimen name="search_edittext_bottom_padding">10dp</dimen>
+
+    <!-- Elevation size -->
+    <dimen name="account_history_elevation_layer1">2dp</dimen>
+    <dimen name="account_history_elevation_layer2">3dp</dimen>
+
+    <!--Text View size-->
+    <dimen name="text_size_font_content_dp">14dp</dimen>
+    <dimen name="text_size_font_content">14sp</dimen>
+    <dimen name="text_size_navigation_bar_title">20sp</dimen>
+    <dimen name="text_size_big_title_view">18sp</dimen>
+    <dimen name="text_size_title_view">16sp</dimen>
+    <dimen name="text_size_section_title">14sp</dimen>
+    <dimen name="text_size_details_font">14sp</dimen>
+    <dimen name="text_size_labels_font">12sp</dimen>
+    <dimen name="text_size_value_font">14sp</dimen>
+    <dimen name="text_size_section_font">12sp</dimen>
+    <dimen name="text_size_current_device_font">11sp</dimen>
+    <dimen name="text_size_locator_filter">10sp</dimen>
+    <dimen name="text_size_error_timestamp_single_line_font">12sp</dimen>
+    <dimen name="text_size_widget_font">12sp</dimen>
+    <dimen name="text_size_widget_title">14dp</dimen>
+    <dimen name="text_size_widget_app_name">14dp</dimen>
+    <dimen name="text_size_time_stamp_font">12dp</dimen>
+    <dimen name="margin_between_texts">2dp</dimen>
+    <dimen name="text_size_widget_avatar_name">12dp</dimen>
+    <dimen name="text_size_widget_info_font">14sp</dimen>
+    <dimen name="text_size_widget_amount_font">14sp</dimen>
+    <dimen name="widget_row_padding">7dp</dimen>
+    <dimen name="filter_text_size_title">12dp</dimen>
+
+    <!--Text View Card sizes-->
+    <dimen name="text_size_card_nickname">16dp</dimen>
+    <dimen name="text_size_card_details">14dp</dimen>
+    <dimen name="text_size_card_available_balance">30dp</dimen>
+    <dimen name="text_size_credit_card_available_balance">22dp</dimen>
+    <dimen name="text_size_card_activity_details">12dp</dimen>
+    <dimen name="text_size_details_font_dp">14dp</dimen>
+    <dimen name="text_size_extended_balance_font_dp">20dp</dimen>
+
+    <!-- notification view sizes -->
+    <dimen name="text_size_notification_title">16dp</dimen>
+    <dimen name="text_size_notification_date">14dp</dimen>
+
+    <!--Text User Profile sizes-->
+    <dimen name="text_size_user_nickname">18dp</dimen>
+
+    <!--Text View Amount chooser-->
+    <dimen name="text_size_amount">30sp</dimen>
+    <dimen name="text_size_currency">14sp</dimen>
+    <dimen name="text_size_currency_small">12sp</dimen>
+
+    <!--icons-->
+    <dimen name="ic_width">40dp</dimen>
+    <dimen name="ic_height">40dp</dimen>
+    <dimen name="btn_ic_width">24dp</dimen>
+    <dimen name="btn_ic_height">24dp</dimen>
+
+    <!--buttons-->
+    <dimen name="btn_elevation">2dp</dimen>
+    <dimen name="btn_radius">2dp</dimen>
+    <dimen name="btn_width">300dp</dimen>
+    <dimen name="btn_height">50dp</dimen>
+    <dimen name="btn_height_small">40dp</dimen>
+    <dimen name="btn_width_small">60dp</dimen>
+    <dimen name="register_btn_width">0dp</dimen>
+    <dimen name="register_btn_height">30dp</dimen>
+    <dimen name="text_btn_padding">10dp</dimen>
+    <dimen name="text_btn_marging">6dp</dimen>
+    <dimen name="closed_height">15dp</dimen>
+
+    <!--spinner-->
+    <dimen name="spinner_width_size">300dp</dimen>
+    <dimen name="spinner_height_size">35dp</dimen>
+    <dimen name="spinner_padding">10dp</dimen>
+
+    <!--switch-->
+    <dimen name="switch_min_width">55dp</dimen>
+
+    <!--lists-->
+    <dimen name="list_row_height">50dp</dimen>
+    <dimen name="list_large_left_margin">32dp</dimen>
+    <dimen name="list_elevation">1px</dimen>
+    <dimen name="list_divider_height">1px</dimen>
+    <dimen name="list_drag_item_container_width">40dp</dimen>
+    <dimen name="list_drag_item_ic_width">27dp</dimen>
+    <dimen name="list_swipe_layout_edge_margin">20dp</dimen>
+    <dimen name="list_ic_swipe_size">27dp</dimen>
+
+    <!--editable-->
+    <dimen name="portfolio_edit_account_text_padding">5dp</dimen>
+    <dimen name="benefeciary_address_edittext_height">35dp</dimen>
+
+    <!--tabs-->
+    <dimen name="tab_indicator_height">3dp</dimen>
+    <dimen name="tab_padding_start">6dp</dimen>
+    <dimen name="tab_padding_end">6dp</dimen>
+    <dimen name="tab_height">50dp</dimen>
+    <dimen name="tab_indicator_margin">-3dp</dimen>
+
+    <!--Splash activity-->
+    <dimen name="progress_bar_margin_bottom">50dp</dimen>
+
+    <!--Login activity-->
+    <dimen name="login_authentication_container_width">300dp</dimen>
+    <dimen name="login_logo_min_height">100dp</dimen>
+    <dimen name="login_fragment_main_layout_padding">0dp</dimen>
+    <dimen name="login_bottom_link_vertical_line">1px</dimen>
+    <dimen name="login_authentication_dot">1px</dimen>
+    <dimen name="max_avatar_width">270dp</dimen>
+    <dimen name="login_auth_general_margin">16dp</dimen>
+
+    <!--Card Account-->
+    <dimen name="card_account_height">175dp</dimen>
+    <dimen name="card_account_details_section_height">50dp</dimen>
+    <dimen name="card_account_row_height">195dp</dimen><!--Sum of card_account_height and 20dp-->
+    <dimen name="card_account_image_width">167dp</dimen>
+    <dimen name="card_account_image_height">136dp</dimen>
+    <dimen name="card_account_corner_radius">2dp</dimen>
+    <dimen name="card_account_corner_radius_back">3dp</dimen>
+    <dimen name="card_account_elevation">2dp</dimen>
+    <dimen name="card_account_margin_top_action_btn">8dp</dimen>
+    <dimen name="card_account_decoration">10dp</dimen>
+    <dimen name="card_account_back_padding_left">4dp</dimen>
+    <dimen name="card_account_back_padding_top">29dp</dimen>
+    <dimen name="embossed_width">280dp</dimen>
+    <dimen name="flip_circle_size">28dp</dimen>
+
+    <!--account card specifics for different screens-->
+    <dimen name="card_account_top_margin">0dp</dimen>
+    <dimen name="card_account_margins">0dp</dimen>
+    <dimen name="favorites_card_account_margins">6dp</dimen>
+    <dimen name="card_account_margins_marketing">5dp</dimen>
+    <dimen name="account_margin_left">16dp</dimen>
+    <dimen name="account_margin_right">16dp</dimen>
+
+    <!--Account history-->
+    <dimen name="header_height">35dp</dimen>
+    <dimen name="account_history_row_height">60dp</dimen>
+    <dimen name="account_history_margin">10dp</dimen>
+    <dimen name="account_history_margin_half">5dp</dimen>
+    <dimen name="account_history_horizontal_margin">16dp</dimen>
+    <dimen name="account_history_horizontal_expanded_margin">8dp</dimen>
+
+    <!--Online Activity-->
+    <dimen name="online_activity_margin">8dp</dimen>
+    <dimen name="online_activity_margin_big">20dp</dimen>
+    <dimen name="online_activity_details_margin_top">8dp</dimen>
+    <dimen name="online_activity_details_margin_bot">5dp</dimen>
+
+    <!--Manage Devices-->
+    <dimen name="manage_devices_vertical_padding">2dp</dimen>
+    <dimen name="manage_devices_margin_top">6dp</dimen>
+    <dimen name="manage_devices_margin_bot">6dp</dimen>
+    <dimen name="manage_devices_margin_right">6dp</dimen>
+    <dimen name="current_device_margin_left">6dp</dimen>
+    <dimen name="space_height">10dp</dimen>
+    <dimen name="current_device_margin_right">14dp</dimen>
+    <dimen name="register_device_image_size">20dp</dimen>
+    <dimen name="no_register_margin_vertical">20dp</dimen>
+    <dimen name="no_register_margin_horizontal">20dp</dimen>
+    <dimen name="register_button_margin_vertical">12dp</dimen>
+    <dimen name="register_device_padding">20dp</dimen>
+
+
+    <!--Edit Account-->
+    <!--Toolbar larg height minus tab height (315dp-50dp)-->
+    <dimen name="edit_accounts_padding_top">265dp</dimen>
+
+    <!--Search View-->
+    <dimen name="search_content_margin">16dp</dimen>
+
+    <!--Analysis-->
+    <dimen name="analysis_layout_margin">16dp</dimen>
+    <dimen name="analysis_initial_bar_size">1dp</dimen>
+    <dimen name="analysis_bar_height">30dp</dimen>
+    <dimen name="analysis_small_image_size">16dp</dimen>
+    <dimen name="startLayoutSize">10dp</dimen>
+
+    <!--Transfer Accounts Mode-->
+    <dimen name="header_margin">5dp</dimen>
+
+    <!--Transfers-->
+    <dimen name="transfers_padding">16dp</dimen>
+    <dimen name="top_container_height">210dp</dimen>
+    <dimen name="horizontal_scrollview_padding">8dp</dimen>
+    <dimen name="horizontal_scrollview_padding_transfers">4dp</dimen>
+    <dimen name="transfer_layout_width">115dp</dimen>
+    <dimen name="transfer_layout_height">105dp</dimen>
+    <dimen name="transfer_image_height">60dp</dimen>
+    <dimen name="transfer_text_padding">5dp</dimen>
+    <dimen name="transfer_text_size">13dp</dimen>
+    <dimen name="search_height">50dp</dimen>
+    <dimen name="transfers_row_padding">7dp</dimen>
+
+    <!--Payments-->
+    <dimen name="payments_green_height">90dp</dimen>
+    <dimen name="payments_margin_vertical">8dp</dimen>
+    <dimen name="payments_margin">16dp</dimen>
+    <dimen name="payments_margin_general">16dp</dimen>
+    <dimen name="payments_padding_bottom">20dp</dimen>
+    <dimen name="payments_padding_top">20dp</dimen>
+    <dimen name="payments_padding_line_top">30dp</dimen>
+    <dimen name="payments_text_padding">5dp</dimen>
+    <dimen name="payments_loading_padding">40dp</dimen>
+    <dimen name="payments_choose_account_list_height">200dp</dimen>
+    <dimen name="payments_placeHolder_inner_views_padding_top">5dp</dimen>
+    <dimen name="payments_placeHolder_inner_views_padding_bottom">5dp</dimen>
+    <dimen name="payments_placeHolder_margin_left_between_textView_imageView">10dp</dimen>
+    <dimen name="payments_lower_placeHolder_padding_top">10dp</dimen>
+    <dimen name="payments_lower_placeHolder_padding_bottom">20dp</dimen>
+    <dimen name="payments_main_padding_bottom">50dp</dimen>
+    <dimen name="edit_nickname_min_width">80dp</dimen>
+    <dimen name="edit_accounts_balance_right_margin">2dp</dimen>
+    <dimen name="auth_from_spinner_margin">10dp</dimen>
+
+    <!--24dp (icon size) +text padding left (5dp)-->
+    <dimen name="payments_choose_account_list_margin_left">29dp</dimen>
+    <dimen name="remaining_char_padding_top">6dp</dimen>
+    <dimen name="regex_recognise_padding_bottom">6dp</dimen>
+
+    <!--User profile-->
+    <dimen name="user_profile_profile_size">100dp</dimen>
+    <dimen name="user_profile_row_height">50dp</dimen>
+    <dimen name="user_profile_circle_top">100dp</dimen>
+    <dimen name="user_profile_circle_left">-90dp</dimen>
+    <dimen name="user_profile_circle_right">90dp</dimen>
+    <dimen name="user_profile_margin">16dp</dimen>
+    <dimen name="userProfileTopFragmentHeight">350dp</dimen>
+    <dimen name="userProfileSignOutMargin">8dp</dimen>
+    <dimen name="userProfileTopMargin">6dp</dimen>
+
+
+    <!-- Exchange Rates -->
+    <dimen name="exchange_rates_margin_top">-50dp</dimen>
+    <dimen name="exchange_rates_margin_bottom">50dp</dimen>
+
+    <!-- Secure Messages -->
+    <dimen name="inbox_message_general_margin">16dp</dimen>
+    <dimen name="inbox_message_element_margin">8dp</dimen>
+    <dimen name="inbox_message_element_side_margin">16dp</dimen>
+    <dimen name="inbox_message_element_top_margin">10dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="wire_transfer_img_padding">16dp</dimen>
+    <dimen name="online_img_padding">8dp</dimen>
+
+    <!--Locator dimension values-->
+    <dimen name="search_container_top_margin">-50dp</dimen>
+    <dimen name="fab_height_locator">70dp</dimen>
+    <dimen name="fab_margin">20dp</dimen>
+    <dimen name="fab_elevation">6dp</dimen>
+    <dimen name="fab_z_translation">12dp</dimen>
+    <dimen name="bottom_sheet_peek_initial_height">110dp</dimen>
+    <dimen name="bottom_sheet_header_height">80dp</dimen>
+    <dimen name="bottom_sheet_negative_margin">-45dp</dimen>
+    <dimen name="locator_icon_size">32dp</dimen>
+
+    <!--Contact Information-->
+    <dimen name="ci_card_padding">16dp</dimen>
+
+    <!--search clearable editText container-->
+    <dimen name="edittext_padding">35dp</dimen>
+    <dimen name="clear_btn_size">30dp</dimen>
+    <dimen name="backspace_btn_size">35dp</dimen>
+    <dimen name="edittext_margin">5dp</dimen>
+
+    <!--amount chooser content-->
+    <dimen name="content_main_amount_dialog_width">320dp</dimen>
+    <dimen name="bottom_amount_container_height">25dp</dimen>
+    <dimen name="amount_container_padding">8dp</dimen>
+    <dimen name="bottom_amount_size">12sp</dimen>
+    <dimen name="switcher_margin">10dp</dimen>
+    <dimen name="switcher_margin_more">16dp</dimen>
+    <dimen name="oneDP">1dp</dimen>
+    <dimen name="tenDP">10dp</dimen>
+
+    <!-- campaigns -->
+    <dimen name="notification_empty_space">16dp</dimen>
+    <dimen name="notification_important_size">18dp</dimen>
+    <dimen name="notification_row_top_padding">10dp</dimen>
+    <dimen name="notification_row_left_padding">4dp</dimen>
+    <dimen name="notification_date_important_right_padding">4dp</dimen>
+    <dimen name="notification_date_bottom_padding">3dp</dimen>
+    <dimen name="notification_expand_image_right_padding">10dp</dimen>
+    <dimen name="notification_expand_layout_right_padding">12dp</dimen>
+    <dimen name="notification_expand_layout_bottom_padding">8dp</dimen>
+    <dimen name="notification_description_top_padding">3dp</dimen>
+    <dimen name="notification_separator_top_margin">8dp</dimen>
+    <dimen name="notification_horizontal_margin">16dp</dimen>
+    <dimen name="notification_horizontal_expanded_margin">10dp</dimen>
+    <dimen name="notification_horizontal_expanded_margin_half">5dp</dimen>
+    <dimen name="notification_vertical_expanded_margin">8dp</dimen>
+    <dimen name="notification_elevation_layer1">2dp</dimen>
+    <dimen name="notification_elevation_layer2">3dp</dimen>
+    <dimen name="notification_action_button_min_height">36dp</dimen>
+    <dimen name="notification_action_button_min_width">32dp</dimen>
+    <dimen name="notification_action_button_right_padding">30dp</dimen>
+
+    <!-- campaign notification view -->
+    <dimen name="notification_view_height">44dp</dimen>
+    <dimen name="notification_view_bulletin_size">34dp</dimen>
+    <dimen name="notification_view_horizontal_margin">4dp</dimen>
+    <dimen name="notification_view_horizontal_margin_x2">8dp</dimen>
+    <dimen name="notification_view_important_size">16dp</dimen>
+    <dimen name="notification_view_vertical_margin">3dp</dimen>
+
+    <!-- marketing login banner view -->
+    <dimen name="marketing_login_banner_view_height">50dp</dimen>
+    <dimen name="marketing_circle_indicator_height">15dp</dimen>
+    <dimen name="marketing_circle_indicator_view_padding_bottom">2dp</dimen>
+    <dimen name="marketing_circle_indicator_margin_bottom">18dp</dimen>
+    <dimen name="marketing_indicator_size">8dp</dimen>
+    <dimen name="marketing_indicator_margin">4dp</dimen>
+
+    <!-- marketing campaign view pager adapter -->
+    <dimen name="marketing_view_adapter_image_width">75dp</dimen>
+    <dimen name="marketing_view_adapter_image_height">50dp</dimen>
+    <dimen name="marketing_view_adapter_title_top_margin">3dp</dimen>
+    <dimen name="marketing_view_adapter_title_left_margin">8dp</dimen>
+    <dimen name="marketing_view_adapter_title_right_margin">10dp</dimen>
+
+    <!-- marketing campaign pager adapter -->
+    <dimen name="marketing_adapter_top_margin">25dp</dimen>
+    <dimen name="marketing_adapter_horizontal_margin">20dp</dimen>
+
+    <!-- marketing campaign pager adapter -->
+    <dimen name="marketing_delegate_top_margin">4dp</dimen>
+    <dimen name="marketing_delegate_right_margin">4dp</dimen>
+
+    <!-- marketing banner -->
+    <dimen name="marketing_banner_view_height">50dp</dimen>
+    <dimen name="marketing_banner_image_width">75dp</dimen>
+    <dimen name="marketing_banner_image_height">50dp</dimen>
+    <dimen name="marketing_banner_title_horizontal_margin">16dp</dimen>
+    <dimen name="marketing_banner_horizontal_margin">16dp</dimen>
+    <dimen name="marketing_banner_result_horizontal_margin">10dp</dimen>
+    <dimen name="marketing_banner_vertical_margin">4dp</dimen>
+    <dimen name="marketing_banner_locator_horizontal_margin">0dp</dimen>
+    <dimen name="marketing_banner_verify_horizontal_margin">0dp</dimen>
+
+    <!--authentication elements-->
+    <dimen name="auth_element_edittext_size">40dp</dimen>
+    <dimen name="auth_element_edittext_padding">10dp</dimen>
+    <dimen name="auth_element_edittext_top_margin">6dp</dimen>
+
+    <!--alerts-->
+    <dimen name="alerts_seperator_height">1dp</dimen>
+    <dimen name="space_between_separators">4dp</dimen>
+    <dimen name="alerts_seperator_top_margin">10dp</dimen>
+    <dimen name="alerts_separator_warning_image_bottom_margin">8dp</dimen>
+    <dimen name="alerts_seperator_right_margin">0dp</dimen>
+    <dimen name="alerts_seperator_left_margin">16dp</dimen>
+    <dimen name="alerts_noAlertsContainer_top_margin">20dp</dimen>
+    <dimen name="alerts_noAlertsContainer_bottom_margin">20dp</dimen>
+    <dimen name="alerts_min_height">80dp</dimen>
+    <dimen name="alerts_min_height2">80dp</dimen>
+    <dimen name="alerts_setup_row_height_padding">16dp</dimen>
+    <dimen name="alerts_setup_amount_chooser_height">50dp</dimen>
+    <dimen name="alerts_setup_amount_chooser_width">200dp</dimen>
+    <dimen name="alerts_delivery_options_top_margin">2dp</dimen>
+    <dimen name="alerts_delivery_options_padding_top">10dp</dimen>
+    <dimen name="alert_sms_prefix_width">40dp</dimen>
+    <dimen name="alert_setup_badge_container_size">20dp</dimen>
+    <dimen name="alert_setup_header_margin">22dp</dimen>
+    <dimen name="alert_setup_padding_left">32dp</dimen>
+
+    <!--Pending Transactions-->
+    <dimen name="row_pending_padding">16dp</dimen>
+
+    <!--account chooser-->
+    <dimen name="top_spinner_margin">8dp</dimen>
+
+    <!--PIN keyboard-->
+    <dimen name="amount_keyboard_height">300dp</dimen>
+    <dimen name="pin_keyboard_height">310dp</dimen>
+    <dimen name="pin_keyboard_text_width">270dp</dimen>
+    <dimen name="pin_keyboard_width">289dp</dimen>
+
+    <dimen name="pin_keyboard_margin">20dp</dimen>
+    <dimen name="backspace_btn_pin_keyboard_size">30dp</dimen>
+    <dimen name="icons_pin_keyboard_size">24dp</dimen>
+    <dimen name="vertical_space_between_numbers">10dp</dimen>
+    <dimen name="vertical_space_between_keyboard">10dp</dimen>
+    <dimen name="vertical_space_bottom_between_keyboard">20dp</dimen>
+    <dimen name="horizontal_space_between_numbers">35dp</dimen>
+    <dimen name="back_space_padding">10dp</dimen>
+    <dimen name="margin_top_keyboard">4dp</dimen>
+
+    <dimen name="margin_top_fingerprint">10dp</dimen>
+
+    <dimen name="logo_pin_width">200dp</dimen>
+    <dimen name="logo_pin_height">35dp</dimen>
+    <dimen name="min_dialog_width">280dp</dimen>
+
+
+    <!-- Objectives-->
+    <dimen name="objective_icon_size">16dp</dimen>
+    <dimen name="objective_margin_right">2dp</dimen>
+    <dimen name="card_obj_offset">6dp</dimen>
+    <dimen name="card_obj_radius">2dp</dimen>
+    <dimen name="card_obj_label_padding">2dp</dimen>
+    <dimen name="card_obj_percentage">6dp</dimen>
+    <dimen name="card_obj_percentage_bottom_margin">7dp</dimen>
+    <dimen name="card_obj_percentage_negative_top_margin">-16dp</dimen>
+    <dimen name="card_account_log_negative_bottom">-20dp</dimen>
+    <dimen name="card_account_log_negative_right">-2dp</dimen>
+    <dimen name="card_account_padding">5dp</dimen>
+    <dimen name="card_account_margin_small">2dp</dimen>
+    <dimen name="card_account_margin_small_negative">-2dp</dimen>
+    <dimen name="card_account_bottom">3dp</dimen>
+    <dimen name="card_account_top">5dp</dimen>
+    <dimen name="tag_objective_width">36dp</dimen>
+    <dimen name="tag_objective_height">26dp</dimen>
+    <dimen name="card_label_height">19dp</dimen>
+    <dimen name="objective_label_margin_right">6dp</dimen>
+    <dimen name="objective_label_text_size">13dp</dimen>
+    <dimen name="card_label_text_size">11dp</dimen>
+
+    <!-- widgets -->
+    <dimen name="widget_min_width">272dp</dimen>
+    <dimen name="widget_min_height">122dp</dimen> <!-- default size -->
+    <dimen name="widget_min_resize_height">46dp</dimen> <!-- min size -->
+    <dimen name="widget_item_list_height">50dp</dimen>
+    <dimen name="widget_header_height">40dp</dimen>
+    <dimen name="widget_item_padding_bottom">5dp</dimen>
+    <dimen name="widget_element_padding_top_bottom">2dp</dimen>
+    <dimen name="widget_single_cell_min_height">46dp</dimen>
+    <dimen name="widget_arrow_size">24dp</dimen>
+
+    <dimen name="widget_text_size">14sp</dimen>
+    <dimen name="widget_text_app_name_size">14sp</dimen>
+    <dimen name="widget_last_sync_text_size">11sp</dimen>
+    <dimen name="widget_timestamp_msg">12sp</dimen>
+    <dimen name="widget_details">12sp</dimen>
+    <dimen name="widget_title_margin">6dp</dimen>
+    <dimen name="widget_container_margin">8dp</dimen>
+    <dimen name="widget_arrow_margin">6dp</dimen>
+    <dimen name="widget_timestamp_height">22dp</dimen>
+    <dimen name="widget_timestamp_single_line_height">15dp</dimen>
+    <dimen name="widget_margin_between_texts">2dp</dimen>
+    <dimen name="widget_refresh_padding">15dp</dimen>
+    <dimen name="widget_header_bottom_margin">5dp</dimen>
+    <dimen name="widget_container_margin_half">4dp</dimen>
+
+
+    <dimen name="widget_image_user_width">34dp</dimen>
+    <dimen name="widget_image_user_height">34dp</dimen>
+    <dimen name="widget_image_logo_width">24dp</dimen>
+    <dimen name="widget_image_logo_height">24dp</dimen>
+    <dimen name="widget_separator_line_height">1dp</dimen>
+    <dimen name="widget_app_name_margin">10dp</dimen>
+
+
+    <dimen name="widget_text_size_card_nickname">16sp</dimen>
+    <dimen name="widget_text_size_card_details">14sp</dimen>
+    <dimen name="widget_text_size_card_available_balance">30sp</dimen>
+
+    <dimen name="widget_item_margin">10dp</dimen>
+
+    <!--Widget Card Account-->
+    <dimen name="widget_card_account_corner_radius">2dp</dimen>
+    <dimen name="widget_card_account_elevation">2dp</dimen>
+
+    <dimen name="widget_card_account_height">135dp</dimen>
+    <dimen name="widget_card_account_image_height">156dp</dimen>
+    <dimen name="widget_card_account_image_width">167dp</dimen>
+
+    <dimen name="widget_logo_size">32dp</dimen>
+    <dimen name="widget_avatar_size">24dp</dimen>
+    <dimen name="widget_avatar_width_background">80dp</dimen>
+    <dimen name="widget_avatar_width_background_padding">20dp</dimen>
+    <dimen name="widget_header_space_margin">10dp</dimen>
+
+    <dimen name="navigation_drawer_max_width">280dp</dimen>
+    <dimen name="tax_free_bar_height">30dp</dimen>
+    <dimen name="taxfree_category_margin">5dp</dimen>
+
+    <!--self unblock -->
+    <dimen name="resend_button_margin">0dp</dimen>
+
+    <item name="swipe_fraction" format="float" type="dimen">0.9</item>
+
+    <!-- capital control  pager adapter -->
+    <dimen name="capital_delegate_top_margin">4dp</dimen>
+    <dimen name="capital_delegate_right_margin">4dp</dimen>
+    <dimen name="capital_padding_right">4dp</dimen>
+
+    <dimen name="capital_view_adapter_image_width">75dp</dimen>
+    <dimen name="capital_view_adapter_image_height">50dp</dimen>
+    <dimen name="capital_view_adapter_title_top_margin">3dp</dimen>
+    <dimen name="capital_view_adapter_title_margin">5dp</dimen>
+    <dimen name="capital_view_adapter_title_right_margin">10dp</dimen>
+    <dimen name="capital_view_adapter_banner_top_margin">8dp</dimen>
+    <dimen name="capital_view_adapter_banner_bottom_margin">12dp</dimen>
+
+    <dimen name="capital_view_adapter_title_margin_portofolio">10dp</dimen>
+    <dimen name="capital_view_adapter_title_margin_favorite">5dp</dimen>
+
+    <dimen name="capital_banner_view_height">80dp</dimen>
+    <dimen name="capital_banner_image_width">75dp</dimen>
+    <dimen name="capital_banner_image_height">50dp</dimen>
+    <dimen name="capital_banner_title_horizontal_margin">16dp</dimen>
+    <dimen name="capital_banner_horizontal_margin">16dp</dimen>
+    <dimen name="capital_banner_result_horizontal_margin">10dp</dimen>
+    <dimen name="capital_banner_vertical_margin">4dp</dimen>
+    <dimen name="capital_banner_locator_horizontal_margin">0dp</dimen>
+    <dimen name="capital_banner_verify_horizontal_margin">0dp</dimen>
+
+    <!-- marketing campaign pager adapter -->
+    <dimen name="capital_control_adapter_top_margin">25dp</dimen>
+    <dimen name="capital_control_adapter_small_top_margin">12dp</dimen>
+    <dimen name="capital_control_adapter_horizontal_margin">20dp</dimen>
+    <dimen name="capital_control_image_height">240dp</dimen>
+
+    <dimen name="exchange_rates_padding">5dp</dimen>
+    <dimen name="locator_item_margin">10dp</dimen>
+    <dimen name="search_main_dialog_height">270dp</dimen>
+
+    <dimen name="placeholder_padding">16dp</dimen>
+    <dimen name="payments_delegate_placeHolder_padding_bottom">10dp</dimen>
+    <dimen name="list_divider_big_height">4px</dimen>
+
+    <dimen name="card_details_column_padding">2dp</dimen>
+    <dimen name="card_details_column_height">60dp</dimen>
+    <dimen name="card_details_button_padding">-15dp</dimen>
+    <dimen name="card_details_height">120dp</dimen>
+
+    <dimen name="authorise_reject_btn_radius">4dp</dimen>
+    <dimen name="reject_btn_top_margin">15dp</dimen>
+    <dimen name="reject_btn_stroke_width">1dp</dimen>
+
+    <!-- new dimens for Account History -->
+    <dimen name="text_size_front_card_details_balance">30dp</dimen>
+    <dimen name="text_size_front_card_details_big">14dp</dimen>
+    <dimen name="text_size_front_card_details_small">13dp</dimen>
+    <dimen name="account_nickname_history">16dp</dimen>
+</resources>

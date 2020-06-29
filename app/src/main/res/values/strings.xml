@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Viva</string>
+    <string name="info_header_text">Below you can find a list of all the available products</string>
+    <string name="details_activity_title">Product Details</string>
+</resources>

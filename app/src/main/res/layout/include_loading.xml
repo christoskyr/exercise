@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loadingView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/first_keyline"
+    android:layout_marginRight="@dimen/first_keyline"
+    android:layout_gravity="center"
+    android:elevation="@dimen/account_history_elevation_layer1"
+    android:visibility="visible"
+    android:background="@color/colorWhite">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/ProgressBarStyle"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/content_main_loading_margin"
+        android:indeterminate="true"/>
+</FrameLayout>

@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Loading View -->
+    <LinearLayout
+        android:id="@+id/loadingView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/content_main_scrollview_margin_top">
+
+        <include layout="@layout/include_loading"/>
+
+    </LinearLayout>
+
+    <!-- Error View -->
+    <LinearLayout
+        android:id="@+id/error_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/content_main_scrollview_margin_top">
+
+            <TextView
+                android:id="@+id/errorView"
+                style="@style/ErrorFont"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/first_keyline"
+                android:layout_marginRight="@dimen/first_keyline"
+                android:background="@color/colorWhite"
+                android:gravity="center"
+                android:visibility="visible"
+                tools:text="Error Message"/>
+
+    </LinearLayout>
+
+    <!-- Content View -->
+    <LinearLayout
+        android:id="@+id/contentView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/payments_margin_general"
+        android:layout_marginRight="@dimen/payments_margin_general"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/spaceView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/content_main_scrollview_margin_top"
+            android:background="@android:color/transparent"/>
+
+        <TextView
+            android:id="@+id/headerText"
+            style="@style/ErrorFont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/payments_padding_top"
+            android:visibility="visible"
+            tools:text="@string/info_header_text" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_marginTop="@dimen/payments_padding_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</RelativeLayout>

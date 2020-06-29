@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--BOLD FONT-->
+    <style name="TextAppearanceBold" parent="TextAppearance.AppCompat">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--LIGHT FONT-->
+    <style name="TextAppearanceLight" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- custom theme to change ProgressBar color by overriding colorAccent-->
+    <style name="ProgressBarStyle" parent="@android:style/Widget.ProgressBar">
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--ERROR FONT-->
+    <style name="ErrorFont" parent="@android:style/Widget.TextView">
+        <item name="android:textAppearance">@style/TextAppearanceLight</item>
+        <item name="android:textSize">@dimen/text_size_details_font</item>
+        <item name="android:textColor">@color/colorGrey</item>
+    </style>
+
+</resources>
