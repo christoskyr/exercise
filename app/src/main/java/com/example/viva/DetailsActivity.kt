@@ -5,9 +5,10 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import domain.ProductDomain
-import org.greenrobot.eventbus.EventBus
-import org.w3c.dom.Text
 
+/**
+ * The Details Activity
+ */
 @Suppress("NULLABILITY_MISMATCH_BASED_ON_JAVA_ANNOTATIONS")
 class DetailsActivity : AppCompatActivity() {
 
@@ -30,8 +31,6 @@ class DetailsActivity : AppCompatActivity() {
 
         setContentView(R.layout.activity_details)
         setUpToolbar()
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        productImage = findViewById<ImageView>(R.id.productImage)
         productName = findViewById<TextView>(R.id.productName)
         productPrice = findViewById<TextView>(R.id.productPrice)
         productDescription = findViewById<TextView>(R.id.productDescription)

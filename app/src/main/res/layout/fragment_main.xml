@@ -53,6 +53,13 @@
             android:layout_height="@dimen/content_main_scrollview_margin_top"
             android:background="@android:color/transparent"/>
 
+        <ImageView
+            android:id="@+id/refreshButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_refresh"/>
+
         <TextView
             android:id="@+id/headerText"
             style="@style/ErrorFont"

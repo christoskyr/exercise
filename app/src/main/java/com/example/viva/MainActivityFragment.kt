@@ -4,11 +4,11 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.viva.component.MainComponent
 import com.example.viva.presenter.MainActivityPresenter
 import com.example.viva.view.MainActivityView
 import com.hannesdorfmann.mosby.mvp.viewstate.lce.LceViewState
@@ -16,6 +16,9 @@ import com.hannesdorfmann.mosby.mvp.viewstate.lce.MvpLceViewStateFragment
 import com.hannesdorfmann.mosby.mvp.viewstate.lce.data.RetainingLceViewState
 import domain.ProductListDomainResponse
 
+/**
+ * Main Activity Fragment
+ */
 class MainActivityFragment:
     MvpLceViewStateFragment<LinearLayout, ProductListDomainResponse, MainActivityView, MainActivityPresenter>(), MainActivityView {
 
@@ -24,10 +27,10 @@ class MainActivityFragment:
      */
     private lateinit var headerText: TextView
     private lateinit var recyclerView: RecyclerView
+    private lateinit var refreshButton: ImageView
 
     private lateinit var mData: ProductListDomainResponse
-    private lateinit var mComponent: MainComponent
-    private lateinit var mAdapter: MainAdapter
+    private lateinit var mAdapter: ProductListAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -37,11 +40,12 @@ class MainActivityFragment:
         val view: View = inflater.inflate(R.layout.fragment_main, container, false)
         headerText = view.findViewById(R.id.headerText)
         recyclerView = view.findViewById(R.id.recyclerView)
+        refreshButton = view.findViewById(R.id.refreshButton)
+
         return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        injectDependencies()
         super.onViewCreated(view, savedInstanceState)
         isRetainInstance = true
     }
@@ -51,7 +55,7 @@ class MainActivityFragment:
     }
 
     override fun createPresenter(): MainActivityPresenter {
-        return MainActivityPresenter()
+        return MainActivityPresenter(context)
     }
 
     override fun setData(data: ProductListDomainResponse?) {
@@ -74,15 +78,18 @@ class MainActivityFragment:
        return this.mData
     }
 
-    fun injectDependencies() {
-        //mComponent = DaggerMainComponent.buider()
-    }
-
     fun initUI(){
         headerText.text = context?.resources?.getString(R.string.info_header_text)
         recyclerView.layoutManager = LinearLayoutManager(activity)
-        mAdapter = MainAdapter(data, context)
+        mAdapter = ProductListAdapter(data.productList)
         recyclerView.adapter = mAdapter
+        refreshButton.setOnClickListener {
+            refreshProductsList()
+        }
+    }
+
+    private fun refreshProductsList() {
+        presenter.refreshProductsList()
     }
 
 }

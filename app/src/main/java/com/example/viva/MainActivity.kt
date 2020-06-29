@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     @Subscribe(threadMode = ThreadMode.MAIN)
-    fun onMessageEvent(event: ProductClickedEvent) {
+    fun onProductClickedEventReceived(event: ProductClickedEvent) {
         val intent = Intent(this, DetailsActivity::class.java)
         intent.putExtra(DetailsActivity.MODEL, event.product)
         startActivity(intent)

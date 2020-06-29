@@ -1,6 +1,7 @@
 package ext.response
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 /**
  * Product DTO
@@ -23,4 +24,4 @@ data class ProductDTO (
 
     @field:SerializedName("Description")
     val Description: String?
-)
+) : Serializable
